@@ -1,0 +1,92 @@
+@import "path/to/font-awesome/less/font-awesome.less";
+@import "sprites.less";
+
+body {
+    background-color:cadetblue;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    padding-top: 4%;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+}
+
+.form {
+    background-color: aliceblue;
+    width: 20%;
+    margin-left: 40%;
+    padding: 1%;
+    border-radius: 10px;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
+}
+
+.form input {
+    width: 80%;
+    margin-left: 9%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 80%;
+    margin-left: 9%;
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+    border-color: cadetblue;
+    border-width: 1.5px;
+    color: cadetblue;
+}
+
+.qr-code img{
+    width: 12%;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+}
+
+.wrapper {
+    height: 360px;
+    background-color: cadetblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper.active {
+    height: 630px;
+}
+
+.wrapper .qr-code {
+    opacity: 0;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
+
+@media screen and (max-width: 992px) {
+    .form {
+        width: 90%;
+        margin-left: 5%;
+
+    }
+
+    .qr-code img{
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+}
